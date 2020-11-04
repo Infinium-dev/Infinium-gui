@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Infinium Wallet
+Comment=Infinium wallet
+Exec=Infiniumwallet %U
+Terminal=false
+Type=Application
+Icon=Infinium
+MimeType=x-scheme-handler/Infinium;
+Categories=Office;Finance;
