@@ -346,7 +346,7 @@ void WalletApplication::daemonFinished(int exitCode, QProcess::ExitStatus /*exit
     const QString walletdMsg = BuiltinWalletd::errorMessage(static_cast<BuiltinWalletd::ReturnCodes>(exitCode));
     const QString msg = !walletdMsg.isEmpty() ?
                             walletdMsg :
-                            tr("Walletd just crashed. %1. Return code %2. ").arg(walletd->errorString()).arg(exitCode);
+                            tr("Walletd just crashed.  If you see this error more times you might have to delete your data folder after update. %1. Return code %2. ").arg(walletd->errorString()).arg(exitCode);
 
     if (crashDialog_->execWithReason(msg, false) == QDialog::Accepted)
         restartDaemon();
