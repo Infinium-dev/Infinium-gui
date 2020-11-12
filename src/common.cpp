@@ -92,7 +92,7 @@ QString formatHashRate(quint64 hashRate)
 
 bool parseAmount(const QString& str, qint64& amount)
 {
-    static const int numberOfDecimalPlaces = 8;
+    static const int numberOfDecimalPlaces = 12;
     static const QChar separator = '.';
     static const QChar minus = '-';
     static const QChar plus = '+';
