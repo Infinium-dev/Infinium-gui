@@ -51,7 +51,7 @@ constexpr char LOCAL_HOST[] = "127.0.0.1";
 constexpr char DEFAULT_WORK_DIR[] = ".infinium";
 #endif
 
-const constexpr char* DEFAULT_MINING_POOLS[] = { "pool.infinium.space:3333"};
+const constexpr char *DEFAULT_MINING_POOLS[] = {"pool.infinium.space:3333", "inf.m2pool.eu:9300", "minenice.newpool.pw:1150", "82.223.13.179A:3333", "pool.letshash.it:1770", "fastpool.xyz:10222"};
 
 static
 bool readJsonFile(QIODevice& device, QSettings::SettingsMap& map)
