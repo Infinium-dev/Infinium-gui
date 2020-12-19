@@ -1,4 +1,5 @@
 // Copyright (c) 2015-2018, The Bytecoin developers.
+// Copyright (c) 2020-2020, The Infinium developers.
 // Licensed under the GNU Lesser General Public License. See LICENSE for details.
 
 #include <QFontDatabase>
@@ -310,7 +311,7 @@ void WalletApplication::disconnectedFromWalletd()
 
 void WalletApplication::detached()
 {
-    splashMsg(tr("Bytecoin GUI is in detached state.\nYou can open a wallet file, create a new one, or connect to remote walletd daemon."));
+    splashMsg(tr("Infnium GUI is in detached state.\nYou can open a wallet file, create a new one, or connect to remote walletd daemon."));
     if (m_mainWindow)
         m_mainWindow->setDisconnectedState();
 }

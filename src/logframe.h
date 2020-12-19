@@ -1,4 +1,5 @@
 // Copyright (c) 2015-2018, The Bytecoin developers.
+// Copyright (c) 2020-2020, The Infinium developers.
 // Licensed under the GNU Lesser General Public License. See LICENSE for details.
 
 #ifndef LOGFRAME_H
