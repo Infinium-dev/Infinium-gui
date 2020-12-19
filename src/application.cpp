@@ -95,7 +95,7 @@ bool WalletApplication::init()
     makeDataDir(logsDir);
     WalletLogger::init(logsDir, true, this);
     WalletLogger::info(tr("[Application] Initializing..."));
-    QString path = dataDir.absoluteFilePath("bytecoin-gui.lock");
+    QString path = dataDir.absoluteFilePath("infinium-gui.lock");
     m_lockFile.reset(new QLockFile(path));
 
     if (!m_lockFile->tryLock())

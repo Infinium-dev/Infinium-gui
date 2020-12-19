@@ -48,7 +48,7 @@ constexpr quint16 DEFAULT_STAGE_BYTECOIND_RPC_PORT = DEFAULT_MAIN_BYTECOIND_RPC_
 constexpr char LOCAL_HOST[] = "127.0.0.1";
 
 #if defined(Q_OS_LINUX)
-constexpr char DEFAULT_WORK_DIR[] = ".bytecoin";
+constexpr char DEFAULT_WORK_DIR[] = ".infinium";
 #endif
 
 const constexpr char* DEFAULT_MINING_POOLS[] = { "pool.infinium.space:3333"};
