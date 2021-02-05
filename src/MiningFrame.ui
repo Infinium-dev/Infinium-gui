@@ -325,7 +325,7 @@
    <item alignment="Qt::AlignHCenter">
     <widget class="QLabel" name="label_8">
      <property name="text">
-      <string>Mining is here in wallet, but it is not recommended, becouse on standard cpu you will have low hashrate compared to ASICs mining infinium now.</string>
+      <string>Don't use this miner please, this miner is deprecated and mines on cn/0 asic algo, suitable only for dev team on testnet.</string>
      </property>
     </widget>
    </item>

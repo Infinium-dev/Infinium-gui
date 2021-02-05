@@ -494,7 +494,6 @@ void MainWindow::openDataFolder()
     const QDir dataDir = Settings::instance().getDefaultWorkDir();
     QDesktopServices::openUrl(QUrl::fromLocalFile(dataDir.absolutePath()));
 }
-
 void MainWindow::packetSent(const QByteArray& data)
 {
     m_ui->m_logFrame->addNetworkMessage(QString("--> ") + QString::fromUtf8(data) + '\n');

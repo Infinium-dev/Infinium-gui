@@ -1,5 +1,6 @@
 build/
 build-infinium-gui-Desktop-Debug/
+build-infinium-gui-Desktop-Release/
 bin/
 Windows Installer/Debug/
 Windows Installer/Release/

@@ -344,10 +344,10 @@ void WalletApplication::daemonFinished(int exitCode, QProcess::ExitStatus /*exit
     qDebug("[WalletApplication] Daemon finished. Return code: %s (%d)",
                 metaEnum.valueToKey(static_cast<int>(exitCode)),
                 exitCode);
+    int is_ex6 = true;
+    if(exitCode==6) is_ex6 = false;
     const QString walletdMsg = BuiltinWalletd::errorMessage(static_cast<BuiltinWalletd::ReturnCodes>(exitCode));
-    const QString msg = !walletdMsg.isEmpty() ?
-                            walletdMsg :
-                            tr("Walletd just crashed.  If you see this error more times you might have to delete your data folder after update. %1. Return code %2. ").arg(walletd->errorString()).arg(exitCode);
+    const QString msg = !walletdMsg.isEmpty() ? walletdMsg : (is_ex6 ? tr("Walletd just crashed. %1. Return code %2. ").arg(walletd->errorString()).arg(exitCode) : tr("Walletd just crashed. If you have upgraded from infinium 2.0.x to 3.0.x and see this error, you need to delete your data folder. %1. Return code %2. ").arg(walletd->errorString()).arg(exitCode));
 
     if (crashDialog_->execWithReason(msg, false) == QDialog::Accepted)
         restartDaemon();

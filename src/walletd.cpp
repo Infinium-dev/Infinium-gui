@@ -889,16 +889,16 @@ QString BuiltinWalletd::errorMessage(ReturnCodes err)
         msg = tr("Database write error. Disk is full or database is corrupted.");
         break;
     case ReturnCodes::BYTECOIND_ALREADY_RUNNING:
-        msg = tr("Cannot run bytecoind. Another instance of bytecoind is running.");
+        msg = tr("Cannot run infiniumd. Another instance of infiniumd is running.");
         break;
     case ReturnCodes::WALLETD_BIND_PORT_IN_USE:
         msg = tr("Cannot run walletd. Walletd bind port in use.");
         break;
     case ReturnCodes::BYTECOIND_BIND_PORT_IN_USE:
-        msg = tr("Cannot run bytecoind. Bytecoind bind port in use.");
+        msg = tr("Cannot run infiniumd. Infiniumd bind port in use.");
         break;
     case ReturnCodes::BYTECOIND_WRONG_ARGS:
-        msg = tr("Wrong arguments passed to bytecoind.");
+        msg = tr("Wrong arguments passed to infiniumd.");
         break;
     case ReturnCodes::WALLET_FILE_READ_ERROR:
         msg = tr("Cannot read the specified wallet file\n(") + Settings::instance().getWalletFile() + ").";
